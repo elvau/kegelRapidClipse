@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<?xdevuiml version="1.0"?>
+<?template BROWSER_XGA?>
+<?import com.company.kegelapp.ui.MainContainer?>
+<?import com.vaadin.flow.component.button.Button?>
+<?import com.vaadin.flow.component.html.Label?>
+<?import com.vaadin.flow.component.orderedlayout.HorizontalLayout?>
+<?import com.vaadin.flow.component.orderedlayout.VerticalLayout?>
+<VerticalLayout xmlns:x="http://xml.xdev-software.com/xdevuiml" x:routeLayout="MainContainer" x:name="StartView" x:route="">
+    <x:constraints zpos="0" width="-1px" height="-1px" />
+    <Label x:name="lblContent" text="Feuchte Pudel">
+        <x:constraints width="0px" alignment="CENTER" height="0px" flex-grow="0.0" />
+        <x:styles>
+            <entry name="font-size" value="2em" />
+        </x:styles>
+    </Label>
+    <Label x:name="lblContent2" text="DIE KEGEL APP">
+        <x:constraints width="0px" alignment="CENTER" height="0px" flex-grow="0.0" />
+        <x:styles>
+            <entry name="font-size" value="2em" />
+        </x:styles>
+    </Label>
+    <HorizontalLayout x:name="horizontalLayout">
+        <x:constraints width="50%" alignment="CENTER" height="100px" flex-grow="0.0" />
+        <Button x:name="buttonSpieltagStarten" text="Spieltag Starten">
+            <x:constraints width="0px" alignment="CENTER" height="0px" flex-grow="0.0" />
+            <x:event>click.onComponentEvent</x:event>
+        </Button>
+        <Button x:name="buttonSpieltagFortführen" text="Spieltag Fortführen" visible="false">
+            <x:constraints width="0px" alignment="CENTER" height="0px" flex-grow="0.0" />
+            <x:event>click.onComponentEvent</x:event>
+        </Button>
+        <Button x:name="buttonSpieltagNeustarten" text="Spieltag Neustarten" visible="false">
+            <x:constraints width="0px" alignment="CENTER" height="0px" flex-grow="0.0" />
+            <x:event>click.onComponentEvent</x:event>
+        </Button>
+    </HorizontalLayout>
+    <Button x:name="button2" text="Spieler Verwalten">
+        <x:constraints width="0px" alignment="CENTER" height="0px" flex-grow="0.0" />
+        <x:event>click.onComponentEvent</x:event>
+    </Button>
+    <Button x:name="button3" text="Strafen Verwalten">
+        <x:constraints width="0px" alignment="CENTER" height="0px" flex-grow="0.0" />
+        <x:event>click.onComponentEvent</x:event>
+    </Button>
+    <Button x:name="button4" text="Statistiken">
+        <x:constraints width="0px" alignment="CENTER" height="0px" flex-grow="0.0" />
+    </Button>
+</VerticalLayout>

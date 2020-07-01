@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<?xdevuiml version="1.0"?>
+<?template BROWSER_XGA?>
+<?import com.company.kegelapp.domain.Spieler?>
+<?import com.company.kegelapp.ui.MainContainer?>
+<?import com.vaadin.flow.component.button.Button?>
+<?import com.vaadin.flow.component.checkbox.CheckboxGroup?>
+<?import com.vaadin.flow.component.html.Label?>
+<?import com.vaadin.flow.component.orderedlayout.VerticalLayout?>
+<VerticalLayout xmlns:x="http://xml.xdev-software.com/xdevuiml" x:routeLayout="MainContainer" spacing="false" x:name="SpielerAuswahl" x:scrollbars="com.rapidclipse.vaadin.editor.model.ScrollbarsPolicy.VERTICAL" alignItems="com.vaadin.flow.component.orderedlayout.FlexComponent.Alignment.START" x:route="spielerauswahl">
+    <x:constraints zpos="0" width="100%" height="100%" />
+    <Label x:name="label" text="Spieler Auswählen">
+        <x:constraints width="0px" alignment="CENTER" height="0px" flex-grow="0.0" />
+    </Label>
+    <CheckboxGroup x:name="checkboxGroup" x:vertical="true">
+        <x:typeArguments>
+            <typeArgument type="Spieler" />
+        </x:typeArguments>
+        <x:constraints width="0px" alignment="CENTER" height="0px" flex-grow="0.0" />
+        <x:itemLabel type="Property" data="name" />
+        <x:event>valueChange.valueChanged</x:event>
+    </CheckboxGroup>
+    <Button x:name="button" text="Spieltag Starten">
+        <x:constraints width="0px" alignment="CENTER" height="0px" flex-grow="0.0" />
+        <x:event>click.onComponentEvent</x:event>
+    </Button>
+</VerticalLayout>
