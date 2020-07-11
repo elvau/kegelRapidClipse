@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<?xdevuiml version="1.0"?>
+<?template BROWSER_XGA?>
+<?import com.company.kegelapp.domain.Spieler?>
+<?import com.company.kegelapp.domain.Strafe?>
+<?import com.vaadin.flow.component.button.Button?>
+<?import com.vaadin.flow.component.grid.Grid?>
+<?import com.vaadin.flow.component.html.Label?>
+<?import com.vaadin.flow.component.listbox.MultiSelectListBox?>
+<?import com.vaadin.flow.component.orderedlayout.HorizontalLayout?>
+<?import com.vaadin.flow.component.orderedlayout.VerticalLayout?>
+<VerticalLayout xmlns:x="http://xml.xdev-software.com/xdevuiml" className="my-view my-view4" x:name="SpieltagView" x:scrollbars="com.rapidclipse.vaadin.editor.model.ScrollbarsPolicy.VERTICAL" x:route="view4">
+    <x:constraints zpos="0" width="-1px" height="-1px" />
+    <Label x:name="lblContent" text="KEGELN">
+        <x:constraints width="0px" height="0px" flex-grow="0.0" />
+        <x:styles>
+            <entry name="font-size" value="2em" />
+        </x:styles>
+    </Label>
+    <HorizontalLayout x:name="horizontalLayout">
+        <x:constraints width="-1px" height="-1px" flex-grow="0.0" />
+        <Button x:name="button" text="Teamspiel">
+            <x:icon src="com.flowingcode.vaadin.addons.ironicons.SocialIcons#PEOPLE" />
+            <x:constraints width="-1px" alignment="START" height="0px" flex-grow="0.0" />
+            <x:event>click.onComponentEvent</x:event>
+        </Button>
+        <Button x:name="button2" text="Spieler Hinzufügen">
+            <x:icon src="com.vaadin.flow.component.icon.VaadinIcon#PLUS" />
+            <x:constraints width="0px" height="0px" flex-grow="0.0" />
+            <x:event>click.onComponentEvent</x:event>
+        </Button>
+        <Button minHeight="" x:name="button3" maxHeight="" text="Spiel Ende" maxWidth="">
+            <x:icon src="com.vaadin.flow.component.icon.VaadinIcon#EXIT" />
+            <x:constraints width="0px" alignment="STRETCH" height="0px" flex-grow="0.0" />
+            <x:event>click.onComponentEvent</x:event>
+        </Button>
+    </HorizontalLayout>
+    <HorizontalLayout x:name="horizontalLayout2">
+        <x:constraints width="-1px" height="-1px" flex-grow="0.0" />
+        <MultiSelectListBox x:name="multiSelectListBox2">
+            <x:typeArguments>
+                <typeArgument type="Spieler" />
+            </x:typeArguments>
+            <x:constraints width="0px" height="0px" flex-grow="0.0" />
+            <x:itemLabel type="Mixed" data="{%name} {%nachName}" />
+            <x:event>valueChange.valueChanged</x:event>
+        </MultiSelectListBox>
+        <MultiSelectListBox x:name="multiSelectListBox" visible="false">
+            <x:typeArguments>
+                <typeArgument type="Strafe" />
+            </x:typeArguments>
+            <x:constraints width="0px" height="0px" flex-grow="0.0" />
+            <x:itemLabel type="Property" data="name" />
+            <x:event>valueChange.valueChanged</x:event>
+        </MultiSelectListBox>
+        <VerticalLayout x:name="verticalLayout" visible="false">
+            <x:constraints width="-1px" height="-1px" flex-grow="0.0" />
+            <Button x:name="buttonPlusOne" text="+ 1">
+                <x:constraints width="0px" height="0px" flex-grow="0.0" />
+                <x:event>click.onComponentEvent</x:event>
+            </Button>
+            <Button x:name="buttonPlusFive" text="+5">
+                <x:constraints width="0px" height="0px" flex-grow="0.0" />
+                <x:event>click.onComponentEvent</x:event>
+            </Button>
+            <Button x:name="buttonMinusOne" text="-1">
+                <x:constraints width="0px" height="0px" flex-grow="0.0" />
+                <x:event>click.onComponentEvent</x:event>
+            </Button>
+            <Button x:name="buttonMinusFive" text="-5">
+                <x:constraints width="0px" height="0px" flex-grow="0.0" />
+                <x:event>click.onComponentEvent</x:event>
+            </Button>
+        </VerticalLayout>
+    </HorizontalLayout>
+    <VerticalLayout x:name="verticalLayout3" visible="false">
+        <x:constraints width="100%" height="100%" flex-grow="0.0" />
+        <Grid x:name="grid">
+            <x:typeArguments>
+                <typeArgument type="Spieler" />
+            </x:typeArguments>
+            <x:constraints width="100%" height="-1px" flex-grow="0.0" />
+            <x:columns>
+                <column property="name" sortable="true" />
+                <column property="nachName" sortable="true" />
+            </x:columns>
+            <x:event>itemClick.onComponentEvent</x:event>
+        </Grid>
+        <Button x:name="button4" text="Hinzufügen" visible="false">
+            <x:constraints width="0px" height="0px" flex-grow="0.0" />
+            <x:event>click.onComponentEvent</x:event>
+        </Button>
+    </VerticalLayout>
+    <VerticalLayout x:name="verticalLayout2">
+        <x:constraints width="100%" height="100%" flex-grow="0.0" />
+    </VerticalLayout>
+</VerticalLayout>

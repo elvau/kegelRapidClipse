@@ -5,9 +5,6 @@ import java.util.Collection;
 
 import com.company.kegelapp.dal.StrafeDAO;
 import com.company.kegelapp.domain.Strafe;
-import com.flowingcode.vaadin.addons.ironicons.DeviceIcons;
-import com.rapidclipse.framework.server.navigation.NavigationIconDevice;
-import com.rapidclipse.framework.server.navigation.NavigationItemProperties;
 import com.rapidclipse.framework.server.resources.CaptionUtils;
 import com.vaadin.flow.component.ClickEvent;
 import com.vaadin.flow.component.ComponentEvent;
@@ -29,10 +26,7 @@ import com.vaadin.flow.data.binder.Binder;
 import com.vaadin.flow.router.Route;
 
 
-@NavigationItemProperties(category = "category 2", displayName = "strafenverwaltenview")
-@NavigationIconDevice(DeviceIcons.BATTERY_CHARGING_60)
-
-@Route(value = "strafenverwaltenview", layout = MainContainer.class)
+@Route(value = "strafenverwaltenview")
 @HtmlImport("frontend://styles/shared-styles.html")
 public class StrafenVerwaltenView extends VerticalLayout
 {

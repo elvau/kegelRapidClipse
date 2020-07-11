@@ -1,5 +1,6 @@
 <factorypath>
     <factorypathentry kind="VARJAR" id="M2_REPO/joda-time/joda-time/2.10.6/joda-time-2.10.6.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/com/vaadin/vaadin-select-flow/3.0.0/vaadin-select-flow-3.0.0.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/com/rapidclipse/rap-server-core/10.02.02-RAP-GA/rap-server-core-10.02.02-RAP-GA.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/com/vaadin/vaadin-core/14.1.25/vaadin-core-14.1.25.jar" enabled="true" runInBatchMode="false"/>
@@ -65,10 +66,6 @@
     <factorypathentry kind="VARJAR" id="M2_REPO/com/vaadin/vaadin-details-flow/2.0.0/vaadin-details-flow-2.0.0.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/com/vaadin/vaadin-time-picker-flow/2.0.6/vaadin-time-picker-flow-2.0.6.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/webjars/bowergithub/vaadin/vaadin-time-picker/2.0.7/vaadin-time-picker-2.0.7.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/com/vaadin/vaadin-select-flow/2.0.3/vaadin-select-flow-2.0.3.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/org/webjars/bowergithub/vaadin/vaadin-select/2.1.7/vaadin-select-2.1.7.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/org/webjars/bowergithub/vaadin/vaadin-list-box/1.1.1/vaadin-list-box-1.1.1.jar" enabled="true" runInBatchMode="false"/>
-    <factorypathentry kind="VARJAR" id="M2_REPO/org/webjars/bowergithub/vaadin/vaadin-list-mixin/2.2.1/vaadin-list-mixin-2.2.1.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/com/vaadin/vaadin-dialog-flow/2.0.1/vaadin-dialog-flow-2.0.1.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/webjars/bowergithub/vaadin/vaadin-dialog/2.2.1/vaadin-dialog-2.2.1.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/com/vaadin/vaadin-form-layout-flow/2.0.3/vaadin-form-layout-flow-2.0.3.jar" enabled="true" runInBatchMode="false"/>
@@ -80,6 +77,8 @@
     <factorypathentry kind="VARJAR" id="M2_REPO/org/webjars/bowergithub/vaadin/vaadin-icons/4.3.1/vaadin-icons-4.3.1.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/com/vaadin/vaadin-iron-list-flow/2.0.0/vaadin-iron-list-flow-2.0.0.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/com/vaadin/vaadin-list-box-flow/2.1.1/vaadin-list-box-flow-2.1.1.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/webjars/bowergithub/vaadin/vaadin-list-box/1.2.0/vaadin-list-box-1.2.0.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/webjars/bowergithub/vaadin/vaadin-list-mixin/2.3.0/vaadin-list-mixin-2.3.0.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/com/vaadin/vaadin-login-flow/2.0.0/vaadin-login-flow-2.0.0.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/org/webjars/bowergithub/vaadin/vaadin-login/1.0.1/vaadin-login-1.0.1.jar" enabled="true" runInBatchMode="false"/>
     <factorypathentry kind="VARJAR" id="M2_REPO/com/vaadin/vaadin-ordered-layout-flow/2.0.0/vaadin-ordered-layout-flow-2.0.0.jar" enabled="true" runInBatchMode="false"/>

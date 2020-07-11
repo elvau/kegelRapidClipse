@@ -3,7 +3,6 @@
 <?xdevuiml version="1.0"?>
 <?template BROWSER_XGA?>
 <?import com.company.kegelapp.domain.Strafe?>
-<?import com.company.kegelapp.ui.MainContainer?>
 <?import com.vaadin.flow.component.button.Button?>
 <?import com.vaadin.flow.component.checkbox.Checkbox?>
 <?import com.vaadin.flow.component.formlayout.FormLayout?>
@@ -18,7 +17,7 @@
 <?import java.lang.Boolean?>
 <?import java.lang.Double?>
 <?import java.lang.String?>
-<VerticalLayout xmlns:x="http://xml.xdev-software.com/xdevuiml" x:routeLayout="MainContainer" className="my-view my-view3" x:name="View3" x:route="view3">
+<VerticalLayout xmlns:x="http://xml.xdev-software.com/xdevuiml" className="my-view my-view3" x:name="View3" x:route="strafenverwaltenview">
     <x:constraints zpos="0" width="100%" height="100%" />
     <Label x:name="lblContent2" text="Strafen Verwalten">
         <x:constraints width="0px" alignment="CENTER" height="0px" flex-grow="0.0" />

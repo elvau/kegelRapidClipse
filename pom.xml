@@ -8,17 +8,6 @@
 	<packaging>war</packaging>
 	<name>KegelApp</name>
 	<version>1.0.0.-SNAPSHOT</version>
-	<properties>
-        <maven-compiler-plugin.source>8</maven-compiler-plugin.source>
-        <maven-compiler-plugin.target>8</maven-compiler-plugin.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <mongodb-driver-sync.version>3.11.0</mongodb-driver-sync.version>
-        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
-        <project.build.sourceEncoding>
-			UTF-8
-		</project.build.sourceEncoding>
-    </properties>
-	
 	<build>
 		<plugins>
 			<plugin>
@@ -30,20 +19,27 @@
 				</configuration>
 			</plugin>
 			<plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-            <source>1.8</source>
-            <target>1.8</target>
-        </configuration>
-    </plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<annotationProcessors>
+						<annotationProcessor>
+							org.hibernate.jpamodelgen.JPAMetaModelEntityProcessor
+						</annotationProcessor>
+					</annotationProcessors>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 	<repositories>
-	<repository>
-        <id>microstream-releases</id>
-        <url>https://repo.microstream.one/repository/maven-public/</url>
-    </repository>
+		<repository>
+			<id>microstream-releases</id>
+			<url>
+				https://repo.microstream.one/repository/maven-public/
+			</url>
+		</repository>
 		<repository>
 			<id>sonatype-nexus-snapshots</id>
 			<name>Sonatype Nexus Snapshots</name>
@@ -59,15 +55,15 @@
 		</repository>
 	</repositories>
 	<dependencies>
-	<dependency>
-    <groupId>joda-time</groupId>
-    <artifactId>joda-time</artifactId>
-    <version>2.10.6</version>
-</dependency>
-<dependency>
- 			<groupId>com.vaadin</groupId>
- 			<artifactId>vaadin-select-flow</artifactId>
- 			<version>3.0.0</version>
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+			<version>2.10.6</version>
+		</dependency>
+		<dependency>
+			<groupId>com.vaadin</groupId>
+			<artifactId>vaadin-select-flow</artifactId>
+			<version>3.0.0</version>
 		</dependency>
 		<dependency>
 			<groupId>com.rapidclipse</groupId>
@@ -75,14 +71,30 @@
 			<version>10.02.02-RAP-GA</version>
 		</dependency>
 		<dependency>
-        <groupId>one.microstream</groupId>
-        <artifactId>storage.embedded</artifactId>
-        <version>03.00.00-MS-GA</version>
-    </dependency>
-    <dependency>
-        <groupId>one.microstream</groupId>
-        <artifactId>storage.embedded.configuration</artifactId>
-        <version>03.00.00-MS-GA</version>
-    </dependency>
+			<groupId>one.microstream</groupId>
+			<artifactId>storage.embedded</artifactId>
+			<version>03.00.00-MS-GA</version>
+		</dependency>
+		<dependency>
+			<groupId>one.microstream</groupId>
+			<artifactId>storage.embedded.configuration</artifactId>
+			<version>03.00.00-MS-GA</version>
+		</dependency>
 	</dependencies>
+	<properties>
+		<maven-compiler-plugin.source>8</maven-compiler-plugin.source>
+		<maven-compiler-plugin.target>8</maven-compiler-plugin.target>
+		<project.build.sourceEncoding>
+			UTF-8
+		</project.build.sourceEncoding>
+		<mongodb-driver-sync.version>
+			3.11.0
+		</mongodb-driver-sync.version>
+		<maven-compiler-plugin.version>
+			3.8.1
+		</maven-compiler-plugin.version>
+		<project.build.sourceEncoding>
+			UTF-8
+		</project.build.sourceEncoding>
+	</properties>
 </project>

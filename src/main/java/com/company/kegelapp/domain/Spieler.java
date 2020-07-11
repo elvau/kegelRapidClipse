@@ -9,8 +9,8 @@ public class Spieler
 	private String    name;
 	private String    nachName;
 	private LocalDate birthday;
-	private Boolean   active;
-
+	private Boolean   active = false;
+	
 	public Spieler(final String name, final String nachName, final LocalDate birthday, final Boolean active)
 	{
 		super();
@@ -19,18 +19,18 @@ public class Spieler
 		this.birthday = birthday;
 		this.setActive(active);
 	}
-	
+
 	public Spieler()
 	{
 		// TODO Auto-generated constructor stub
 	}
-
+	
 	@Override
 	public String toString()
 	{
 		return "Spieler [name=" + this.name + ", nachName=" + this.nachName + "]";
 	}
-	
+
 	@Override
 	public int hashCode()
 	{
@@ -40,7 +40,7 @@ public class Spieler
 		result = prime * result + ((this.name == null) ? 0 : this.name.hashCode());
 		return result;
 	}
-	
+
 	@Override
 	public boolean equals(final Object obj)
 	{
@@ -81,45 +81,49 @@ public class Spieler
 		}
 		return true;
 	}
-	
+
 	public String getName()
 	{
 		return this.name;
 	}
-	
+
 	public void setName(final String name)
 	{
 		this.name = name;
 	}
-	
+
 	public LocalDate getBirthday()
 	{
 		return this.birthday;
 	}
-	
+
 	public void setBirthday(final LocalDate birthday)
 	{
 		this.birthday = birthday;
 	}
-	
+
 	public Boolean getActive()
 	{
 		return this.active;
 	}
-	
+
 	public void setActive(final Boolean active)
 	{
-		this.active = active;
+		
+		if(active != null)
+		{
+			this.active = active;
+		}
 	}
-	
+
 	public String getNachName()
 	{
 		return this.nachName;
 	}
-	
+
 	public void setNachName(final String nachName)
 	{
 		this.nachName = nachName;
 	}
-	
+
 }
